@@ -11,7 +11,7 @@ namespace CodeTests
     {
         static void Main(string[] args)
         {
-            var test = new ForLoop1();
+            var test = new ForLoop3();
             test.Run();
 
 
