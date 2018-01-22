@@ -1,4 +1,6 @@
-﻿namespace CodeTests.Tests.ForLoops
+﻿using System;
+
+namespace CodeTests.Tests.ForLoops
 {
     public class ForLoop1 : ICodeTest
     {
@@ -8,7 +10,10 @@
 
             // TODO: Multiply all the elements in the array by 2
 
-
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.WriteLine(array[i]*2);
+            }
 
         }
     }
