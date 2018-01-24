@@ -46,8 +46,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tests\ForLoops\ForLoop2.cs" />
     <Compile Include="Tests\ForLoops\ForLoop1.cs" />
+    <Compile Include="Tests\ForLoops\ForLoop4.cs" />
     <Compile Include="Tests\ForLoops\ForLoop3.cs" />
     <Compile Include="Tests\ICodeTest.cs" />
+    <Compile Include="Tests\IfElse\IfElse4.cs" />
+    <Compile Include="Tests\IfElse\IfElse3.cs" />
+    <Compile Include="Tests\IfElse\IfElse2.cs" />
+    <Compile Include="Tests\IfElse\IfElse1.cs" />
+    <Compile Include="Tests\WhileLoops\WhileLoop3.cs" />
+    <Compile Include="Tests\WhileLoops\WhileLoop2.cs" />
+    <Compile Include="Tests\WhileLoops\WhileLoop1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
