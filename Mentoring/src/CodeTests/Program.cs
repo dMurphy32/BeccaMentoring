@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CodeTests.Tests.ForLoops;
 using CodeTests.Tests.IfElse;
+using CodeTests.Tests.WhileLoops;
 
 namespace CodeTests
 {
@@ -12,7 +9,7 @@ namespace CodeTests
     {
         static void Main(string[] args)
         {
-            var test = new IfElse4();
+            var test = new WhileLoop1();
             test.Run();
 
 
