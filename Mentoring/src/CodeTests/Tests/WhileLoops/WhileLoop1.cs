@@ -16,7 +16,6 @@ namespace CodeTests.Tests.WhileLoops
             //TODO: Try implementing as a do while
 
             //while loop
-
             Console.Write("Input password: ");
             var input = Console.ReadLine();
 
@@ -25,10 +24,18 @@ namespace CodeTests.Tests.WhileLoops
                 Console.Write("Input password (again): ");
                 input = Console.ReadLine();
             }
-
             Console.WriteLine("Correct");
 
-        
+            //do while loop
+            string input2 = null;
+            do
+            {
+                Console.Write("Input password: ");
+                input2 = Console.ReadLine();
+            } while (expected != input2);
+
+            Console.WriteLine("Correct");
+                
         }
     }
 }
