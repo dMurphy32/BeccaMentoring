@@ -9,7 +9,7 @@ namespace CodeTests
     {
         static void Main(string[] args)
         {
-            var test = new WhileLoop1();
+            var test = new WhileLoop2();
             test.Run();
 
 
