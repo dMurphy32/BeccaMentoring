@@ -60,7 +60,6 @@
     <Compile Include="Tests\IfElse\IfElse3.cs" />
     <Compile Include="Tests\IfElse\IfElse2.cs" />
     <Compile Include="Tests\IfElse\IfElse1.cs" />
-    <Compile Include="Tests\WhileLoops\WhileLoop5.cs" />
     <Compile Include="Tests\WhileLoops\WhileLoop4.cs" />
     <Compile Include="Tests\WhileLoops\WhileLoop3.cs" />
     <Compile Include="Tests\WhileLoops\WhileLoop2.cs" />
