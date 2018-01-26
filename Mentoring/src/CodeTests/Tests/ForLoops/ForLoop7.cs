@@ -7,29 +7,29 @@ using CodeTests.Models;
 
 namespace CodeTests.Tests.ForLoops
 {
-    public class ForLoop4 : ICodeTest
+    public class ForLoop7 : ICodeTest
     {
         public void Run()
         {
             var data = Initialise();
-
-            // TODO 1: Print the even numbers from each object in data array. 
-            // TODO 2: At the end of every data item, output the "Completed Item 'n'" where n is the index of the data item
+            // TODO Iterating through the number array classes in reverse order print the numbers in each object in order 
+            // ie. print the array from obj 3 first in order, then from obj 2 in order
+            // 11 12 13 14 15 6 7 8 9 10
         }
 
         private IList<NumberArray> Initialise()
         {
             var result = new List<NumberArray>();
 
-            result.Add(new NumberArray
+            result.Add(new NumberArray //object 1
             {
-                Numbers = new [] {1, 2, 3, 4, 5}
+                Numbers = new[] { 1, 2, 3, 4, 5 }
             });
-            result.Add(new NumberArray
+            result.Add(new NumberArray // object 2
             {
                 Numbers = new[] { 6, 7, 8, 9, 10 }
             });
-            result.Add(new NumberArray
+            result.Add(new NumberArray //object 3
             {
                 Numbers = new[] { 11, 12, 13, 14, 15 }
             });
