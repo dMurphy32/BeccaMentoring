@@ -16,31 +16,19 @@ namespace CodeTests.Tests.WhileLoops
             //TODO: Try implementing as a do while
 
             //while loop
-            while (true)
-            {
-                Console.Write("Input password: ");
-                var input = Console.ReadLine();
 
-                //A break to end a while loop should only be used in exceptional circumstances
-                //ie. working on an array and some operation in it removes all items in the array (poor example)
-                //At the end of every while loop the condition in the while loop is asserted and it only executes if it is true
-                //Currently it is always true, but you could move a version of this conition into it instead
-                if (expected == input)
-                { break; }
+            Console.Write("Input password: ");
+            var input = Console.ReadLine();
+
+            while (expected != input)
+            {
+                Console.Write("Input password (again): ");
+                input = Console.ReadLine();
             }
 
-            //do while loop
-            do
-            {
-                Console.Write("Input password: ");
-                var input = Console.ReadLine();
+            Console.WriteLine("Correct");
 
-                if (expected == input)
-                {
-                    break;
-                }
-                //Same as above
-            } while (true);
+        
         }
     }
 }
