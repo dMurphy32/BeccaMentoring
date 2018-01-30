@@ -18,6 +18,9 @@ namespace CodeTests.Tests.WhileLoops
             //TODO: What if we only needed one to match?
             //TODO: Try implementing as a do while
 
+
+            //TODO Implement using both && and ||
+
             //both need to match
             Console.Write("Input a string: ");
             var strInput = Console.ReadLine();

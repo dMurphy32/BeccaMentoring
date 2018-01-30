@@ -15,6 +15,8 @@ namespace CodeTests.Tests.WhileLoops
             //TODO: Ask a user for input and while the input is not equal to expected re-ask for the input
             //TODO: Try implementing as a do while
 
+            //TODO: Implement while loop correctly but with the assertion '==' instead of '!='
+
             //while loop
             Console.Write("Input password: ");
             var input = Console.ReadLine();
