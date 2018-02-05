@@ -7,7 +7,7 @@ using CodeTests.Models;
 
 namespace CodeTests.Tests.ForLoops
 {
-    public class ForLoop5 : ICodeTest
+    public class ForLoop6 : ICodeTest
     {
         public void Run()
         {
