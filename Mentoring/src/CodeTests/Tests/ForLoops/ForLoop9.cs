@@ -13,6 +13,18 @@ namespace CodeTests.Tests.ForLoops
         {
             var data = Initialise();
             // TODO Print the even numbers from every second array
+
+            for (int i = 1; i < data.Count; i = i+2)
+            {
+                for (int j = 0; j < data[i].Numbers.Length; j++)
+                {
+                    var numSet = data[i].Numbers[j];
+                    if (numSet%2 == 0)
+                    {
+                        Console.WriteLine(numSet);
+                    }
+                }
+            }
         }
 
         private IList<NumberArray> Initialise()
