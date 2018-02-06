@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,6 +14,20 @@ namespace CodeTests.Tests.ForLoops
         {
             var data = Initialise();
             // TODO Sum up all the numbers across all the arrays
+
+            
+            for (int i = 0; i < data.Count; i++)
+            {
+                var sum = 0;
+                for (int j = 0; j < data[i].Numbers.Length; j++)
+                {
+                    sum += data[i].Numbers[j];
+                }
+
+                //var sum = 0;
+                //sum += data[i];
+                Console.WriteLine($"The sum of object {i} = {sum}");
+            }
         }
 
         private IList<NumberArray> Initialise()
