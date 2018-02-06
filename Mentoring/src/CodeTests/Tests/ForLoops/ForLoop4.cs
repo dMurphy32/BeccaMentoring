@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,8 +15,22 @@ namespace CodeTests.Tests.ForLoops
         {
             var data = Initialise();
 
-            // TODO 1: Print the even numbers from each object in data array. 
-            // TODO 2: At the end of every data item, output the "Completed Item 'n'" where n is the index of the data item
+            // TODO 1: Print all numbers from each object in data array.  
+            // TODO 2: Print the even numbers from each object in data array. 
+            // TODO 3: At the end of every data item, output the "Completed Item 'n'" where n is the index of the data item
+            //use nested for loops
+
+            
+            for (int i = 0; i < data.Count; i++)
+            {
+                for (int j = 0; j < i; j++)
+                {
+                    Console.WriteLine(data[j].Numbers[i]);
+                }
+
+                
+                
+            }
         }
 
         private IList<NumberArray> Initialise()
@@ -23,7 +39,7 @@ namespace CodeTests.Tests.ForLoops
 
             result.Add(new NumberArray
             {
-                Numbers = new [] {1, 2, 3, 4, 5}
+                Numbers = new[] { 1, 2, 3, 4, 5 }
             });
             result.Add(new NumberArray
             {
@@ -36,5 +52,6 @@ namespace CodeTests.Tests.ForLoops
 
             return result;
         }
+
     }
 }
