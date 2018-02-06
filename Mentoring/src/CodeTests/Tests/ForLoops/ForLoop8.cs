@@ -13,6 +13,20 @@ namespace CodeTests.Tests.ForLoops
         {
             var data = Initialise();
             // TODO Print the odd numbers from every array
+
+            for (int i = 0; i < data.Count; i++)
+            {
+                for (int j = 0; j < data[i].Numbers.Length; j++)
+                {
+                    var numSet = data[i].Numbers[j];
+                    if (numSet%2==1)
+                    {
+                        Console.WriteLine(numSet);
+                    }
+                }
+
+                Console.WriteLine();
+            }
         }
 
         private IList<NumberArray> Initialise()
