@@ -20,19 +20,42 @@ namespace CodeTests.Tests.ForLoops
             // TODO 3: At the end of every data item, output the "Completed Item 'n'" where n is the index of the data item
             //use nested for loops
 
-            
+
+            //all number from each object in data array
             for (int i = 0; i < data.Count; i++)
             {
-                //You want want access the length of the array at data[i]
-                for (int j = 0; j < i; j++)
+                for (int j = 0; j < data[i].Numbers.Length; j++)
                 {
-                    Console.WriteLine(data[j].Numbers[i]);
+                    Console.Write("{0}, ", data[i].Numbers[j]);
                 }
+                Console.WriteLine();
+            }
 
-                
-                
+            //even numbers from each object in data array
+            for (int i = 0; i < data.Count; i++)
+            {
+                for (int j = 0; j < data[i].Numbers.Length; j++)
+                {
+                    var numSet = data[i].Numbers[j];
+                    if (numSet % 2 ==0)
+                    {
+                        Console.Write("{0}, ", numSet);
+                    }
+                }
+                Console.WriteLine();
+            }
+
+            //At the end of every data item, output the "Completed Item 'n'" where n is the index of the data item
+            for (int i = 0; i < data.Count; i++)
+            {
+                for (int j = 0; j < data[i].Numbers.Length; j++)
+                {
+                    Console.Write("{0}, ", data[i].Numbers[j]);
+                }
+                Console.WriteLine("The Completed Item {0}", i);
             }
         }
+
 
         private IList<NumberArray> Initialise()
         {
