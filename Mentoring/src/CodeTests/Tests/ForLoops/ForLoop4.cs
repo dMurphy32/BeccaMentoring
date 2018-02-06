@@ -23,6 +23,7 @@ namespace CodeTests.Tests.ForLoops
             
             for (int i = 0; i < data.Count; i++)
             {
+                //You want want access the length of the array at data[i]
                 for (int j = 0; j < i; j++)
                 {
                     Console.WriteLine(data[j].Numbers[i]);
