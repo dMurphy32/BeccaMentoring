@@ -16,7 +16,7 @@ namespace CodeTests.Tests.WhileLoops
             Console.Write("Input the 3 digit code: ");
             var answer = Convert.ToInt32(Console.ReadLine());
 
-            while (expected != answer && length < array.Length)
+            while (expected != answer && length < 5)
             {
                 Console.Write("Nope, try again: ");
                 answer = Convert.ToInt32(Console.ReadLine());
