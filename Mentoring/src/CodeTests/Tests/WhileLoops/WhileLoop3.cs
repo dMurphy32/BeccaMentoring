@@ -6,14 +6,13 @@ namespace CodeTests.Tests.WhileLoops
     {
         public void Run()
         {
-            var array = new[] { 3, 4, 5, 6, 7, 8 };
+            var array = new[] { 3, 4, 5, 6, 7, 44 };
             //TODO: Using a while loop Multiply all the elements in the array by 2. Use the array values!
 
-            var num = 1;
-
-            while (num <= array.Length)
+            var num = 0;
+            while (num < array.Length)
             {
-                Console.WriteLine(num*2);
+                Console.WriteLine(array[num]*2);
                 num++;
             }
         }
