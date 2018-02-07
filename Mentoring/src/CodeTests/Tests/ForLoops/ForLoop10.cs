@@ -18,17 +18,18 @@ namespace CodeTests.Tests.ForLoops
             // TODO Sum up all the numbers across all the arrays
 
             var sum = 0;
-        
+            var total = sum + sum + sum;
             for (int i = 0; i < data.Count; i++)
             {
                 sum = 0;
                 for (int j = 0; j < data[i].Numbers.Length; j++)
                 {
                     sum += data[i].Numbers[j];
+                    //total += i;
                 }
                 Console.WriteLine($"The sum of object {i} = {sum}");
+                total += sum;
             }
-            var total = sum + sum + sum;
             Console.WriteLine($"total is {total}");
         }
 
