@@ -45,6 +45,9 @@
     <Compile Include="Models\NumberArray.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tests\ForLoops\ForLoop11.cs" />
+    <Compile Include="Tests\ForLoops\ForLoop12.cs" />
+    <Compile Include="Tests\ForLoops\ForLoop13.cs" />
     <Compile Include="Tests\ForLoops\ForLoop2.cs" />
     <Compile Include="Tests\ForLoops\ForLoop1.cs" />
     <Compile Include="Tests\ForLoops\ForLoop10.cs" />
