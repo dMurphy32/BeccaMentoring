@@ -1,4 +1,5 @@
 ﻿using System;
+using System.CodeDom;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,27 +18,51 @@ namespace CodeTests.Tests.WhileLoops
 
             //TODO: Implement while loop correctly but with the assertion '==' instead of '!='
 
+
             //while loop
+            //Console.Write("Input password: ");
+            //var input = Console.ReadLine();
+
+            //while (expected != input)
+            //{
+            //    Console.Write("Input password (again): ");
+            //    input = Console.ReadLine();
+            //}
+
+            //Console.WriteLine("Correct");
+
+            ////do while loop
+            //string input2 = null;
+            //do
+            //{
+            //    Console.Write("Input password: ");
+            //    input2 = Console.ReadLine();
+            //} while (expected != input2);
+
+            //Console.WriteLine("Correct");
+
+            //while loop with '==' instead of '!='
+
             Console.Write("Input password: ");
-            var input = Console.ReadLine();
+            var input3 = Console.ReadLine();
 
-            while (expected != input)
+            if (expected == input3)
             {
-                Console.Write("Input password (again): ");
-                input = Console.ReadLine();
+                while (expected == input3)
+                {
+                    Console.WriteLine("correct");
+                }
             }
-            Console.WriteLine("Correct");
-
-            //do while loop
-            string input2 = null;
-            do
+            else
             {
-                Console.Write("Input password: ");
-                input2 = Console.ReadLine();
-            } while (expected != input2);
+                while (expected != input3)
+                {
+                    Console.Write("Input password (again): ");
+                    input3 = Console.ReadLine();
+                }
 
-            Console.WriteLine("Correct");
-                
+                Console.WriteLine("correct!");
+            }
         }
     }
 }
