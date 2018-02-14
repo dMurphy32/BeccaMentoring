@@ -44,25 +44,15 @@ namespace CodeTests.Tests.WhileLoops
             //while loop with '==' instead of '!='
 
             Console.Write("Input password: ");
-            var input3 = Console.ReadLine();
+            var input = Console.ReadLine();
 
-            if (expected == input3)
+            while (!(expected == input))
             {
-                while (expected == input3)
-                {
-                    Console.WriteLine("correct");
-                }
+                Console.Write("Input password (again): ");
+                input = Console.ReadLine();
             }
-            else
-            {
-                while (expected != input3)
-                {
-                    Console.Write("Input password (again): ");
-                    input3 = Console.ReadLine();
-                }
 
-                Console.WriteLine("correct!");
-            }
+            Console.WriteLine("Correct!");
         }
     }
 }

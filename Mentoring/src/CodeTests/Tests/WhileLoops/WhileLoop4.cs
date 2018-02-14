@@ -31,6 +31,17 @@ namespace CodeTests.Tests.WhileLoops
             {
                 Console.WriteLine("Correct, you're a star!");
             }
+
+            // part 1 using ||
+            Console.Write("Input the 3 digit code: ");
+            var answer2 = Convert.ToInt32(Console.ReadLine());
+
+            while (!(expected != answer2) || length < 5)
+            {
+                Console.Write("Nope, try again: ");
+                answer2 = Convert.ToInt32(Console.ReadLine());
+                length++;
+            }
         }
     }
 }
