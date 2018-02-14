@@ -1,23 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace CodeTests.Tests.ForLoops
 {
-    public class ForLoop3 : ICodeTest
+    public class ReverseArray
     {
-        public void Run()
+        public  List<int> Run(int[] input)
         {
-            var array = new[] { 1, 2, 3, 4, 5, 6 };
+            //var array = new[] { 1, 2, 3, 4, 5, 6 };
 
             // TODO: Create new array that is the reverse of the original
 
-            for (int i = array.Length; i > 0; i--)
+            var result = new List<int>();
+
+            for (int i = input.Length; i > 0; i--)
             {
                 Console.WriteLine(i);
             }
+
+            return result ;
         }
     }
 }

@@ -1,20 +1,26 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace CodeTests.Tests.ForLoops
 {
-    public class ForLoop1 : ICodeTest
+    public class MultiplyArrayBy2
     {
-        public void Run()
+        public List<int> Run(int[] input)
         {
-            var array = new[] { 1, 2, 3, 4, 5, 6};
+            //var array = new[] { 1, 2, 3, 4, 5, 6};
 
             // TODO: Multiply all the elements in the array by 2
 
-            for (int i = 0; i < array.Length; i++)
+            var result = new List<int>();
+
+            for (int i = 0; i < input.Length; i++)
             {
-                Console.WriteLine(array[i]*2);
+                var val = input[i] * 2;
+                Console.WriteLine(val);
+                result.Add(val);
             }
 
+            return result;
         }
     }
 }

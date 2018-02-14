@@ -9,8 +9,8 @@ namespace CodeTests
     {
         static void Main(string[] args)
         {
-            var test = new WhileLoop4();
-            test.Run();
+            //var test = new WhileLoop4();
+            //test.Run();
 
 
             Console.ReadLine();
