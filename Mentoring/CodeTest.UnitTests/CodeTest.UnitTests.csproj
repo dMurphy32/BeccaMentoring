@@ -51,6 +51,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ForLoops\EvenNumberInArrayTestFixture.cs" />
     <Compile Include="ForLoops\MultiplyArrayBy2TestFixture.cs" />
     <Compile Include="ForLoops\ReverseArrayTestFixture.cs" />
     <Compile Include="ForLoops\SetAllToOddTestFixture.cs" />
