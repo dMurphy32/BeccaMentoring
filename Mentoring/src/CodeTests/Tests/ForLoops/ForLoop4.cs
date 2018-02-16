@@ -11,7 +11,7 @@ namespace CodeTests.Tests.ForLoops
 {
     public class EvenNumbersInArray
     {
-        public List<int> Run(int[] input)
+        public List<int> Run(IList<NumberArray> input)
         {
             var result = new List<int>();
 
@@ -22,62 +22,47 @@ namespace CodeTests.Tests.ForLoops
 
 
             //all number from each object in data array
-            for (int i = 0; i < input.Length; i++)
-            {
-                for (int j = 0; j < input.Length; j++)
-                {
-                    Console.Write("{0}, ", input[i]);
-                    result.Add(input[i]);
-                }
-                Console.WriteLine();
-            }
+            //for (int i = 0; i < input.Length; i++)
+            //{
+            //    for (int j = 0; j < input.Length; j++)
+            //    {
+            //        Console.Write("{0}, ", input[i]);
+            //        result.Add(input[i]);
+            //    }
+            //    Console.WriteLine();
+            //}
 
-            return result;
+            //return result;
 
             ////even numbers from each object in data array
-            //for (int i = 0; i < data.Count; i++)
+            //for (int i = 0; i < input.Length; i++)
             //{
-            //    for (int j = 0; j < data[i].Numbers.Length; j++)
+            //    for (int j = 0; j < input[i]; j++)
             //    {
-            //        var numSet = data[i].Numbers[j];
-            //        if (numSet % 2 ==0)
+            //        var numSet = input[i];
+            //        if (numSet % 2 == 0)
             //        {
             //            Console.Write("{0}, ", numSet);
+            //            result.Add(input[i]);
             //        }
             //    }
             //    Console.WriteLine();
             //}
 
+            //return result;
+
             ////At the end of every data item, output the "Completed Item 'n'" where n is the index of the data item
-            //for (int i = 0; i < data.Count; i++)
-            //{
-            //    for (int j = 0; j < data[i].Numbers.Length; j++)
-            //    {
-            //        Console.Write("{0}, ", data[i].Numbers[j]);
-            //    }
-            //    Console.WriteLine("The Completed Item {0}", i);
-            //}
+            for (int i = 0; i < input.Count; i++)
+            {
+                for (int j = 0; j < input[i].Numbers.Count; j++)
+                {
+                    Console.Write("{0}, ", input[i].Numbers[j]);
+                    result.Add(input[i].Numbers[j]);
+                }
+                Console.WriteLine("The Completed Item {0}", i);
+            }
+
+            return result;
         }
-
-        //private IList<NumberArray> Initialise()
-        //{
-        //    var result = new List<NumberArray>();
-
-        //    result.Add(new NumberArray
-        //    {
-        //        Numbers = new[] { 1, 2, 3, 4, 5 }
-        //    });
-        //    result.Add(new NumberArray
-        //    {
-        //        Numbers = new[] { 6, 7, 8, 9, 10 }
-        //    });
-        //    result.Add(new NumberArray
-        //    {
-        //        Numbers = new[] { 11, 12, 13, 14, 15 }
-        //    });
-
-        //    return result;
-        //    }
-
-        }
+    }
 }
