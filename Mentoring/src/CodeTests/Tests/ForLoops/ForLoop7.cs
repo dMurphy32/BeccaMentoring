@@ -7,41 +7,24 @@ using CodeTests.Models;
 
 namespace CodeTests.Tests.ForLoops
 {
-    public class ForLoop7 : ICodeTest
+    public class IteratingReverseNumbers
     {
-        public void Run()
+        public List<int> Run(IList<NumberArray> input)
         {
-            var data = Initialise();
+            var result = new List<int>();
             // TODO Iterating through the number array classes in reverse order print the numbers in each object in order 
             // ie. print the array from obj 3 first in order, then from obj 2 in order
             // 11 12 13 14 15 6 7 8 9 10
 
-            for (int i = data.Count-1; i >= 0; i--)
+            for (int i = input.Count-1; i >= 0; i--)
             {
-                for (int j = 0; j < data[i].Numbers.Length; j++)
+                for (int j = 0; j < input[i].Numbers.Count; j++)
                 {
-                    Console.WriteLine(data[i].Numbers[j]);
+                    Console.WriteLine(input[i].Numbers[j]);
+                    result.Add(input[i].Numbers[j]);
                 }
                 Console.WriteLine();
             }
-        }
-
-        private IList<NumberArray> Initialise()
-        {
-            var result = new List<NumberArray>();
-
-            result.Add(new NumberArray //object 1
-            {
-                Numbers = new[] { 1, 2, 3, 4, 5 }
-            });
-            result.Add(new NumberArray // object 2
-            {
-                Numbers = new[] { 6, 7, 8, 9, 10 }
-            });
-            result.Add(new NumberArray //object 3
-            {
-                Numbers = new[] { 11, 12, 13, 14, 15 }
-            });
 
             return result;
         }
