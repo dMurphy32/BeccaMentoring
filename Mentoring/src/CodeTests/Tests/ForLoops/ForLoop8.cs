@@ -7,45 +7,27 @@ using CodeTests.Models;
 
 namespace CodeTests.Tests.ForLoops
 {
-    public class ForLoop8 : ICodeTest
+    public class OddNumbers
     {
-        public void Run()
+        public List<int> Run(IList<NumberArray> input)
         {
-            var data = Initialise();
+            var result = new List<int>();
             // TODO Print the odd numbers from every array
 
-            for (int i = 0; i < data.Count; i++)
+            for (int i = 0; i < input.Count; i++)
             {
-                for (int j = 0; j < data[i].Numbers.Length; j++)
+                for (int j = 0; j < input[i].Numbers.Count; j++)
                 {
-                    var numSet = data[i].Numbers[j];
+                    var numSet = input[i].Numbers[j];
                     if (numSet%2==1)
                     {
                         Console.WriteLine(numSet);
+                        result.Add(numSet);
                     }
                 }
 
                 Console.WriteLine();
             }
-        }
-
-        private IList<NumberArray> Initialise()
-        {
-            var result = new List<NumberArray>();
-
-            result.Add(new NumberArray //object 1
-            {
-                Numbers = new[] { 1, 2, 3, 4, 5 }
-            });
-            result.Add(new NumberArray // object 2
-            {
-                Numbers = new[] { 6, 7, 8, 9, 10 }
-            });
-            result.Add(new NumberArray //object 3
-            {
-                Numbers = new[] { 11, 12, 13, 14, 15 }
-            });
-
             return result;
         }
     }
