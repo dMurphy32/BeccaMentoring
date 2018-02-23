@@ -18,40 +18,33 @@ namespace CodeTests.Tests.ForLoops
             //TODO: Find the array with the largest sum of numbers
             //TODO: Initialise data with InitialiseWithNegativeNumbers and assert it works
 
-            
+            var sum = 0;
             var total = 0;
             for (int i = 0; i < data.Count; i++)
             {
-                var sum = 0;
+                sum = 0;
                 for (int j = 0; j < data[i].Numbers.Count; j++)
                 {
                     sum += data[i].Numbers[j];
                 }
-                total += sum;
+                total = sum;
             }
-            Console.WriteLine(total);
-        
+           Console.WriteLine(Math.Max(total,sum));
 
+
+            var sumNeg = 0;
             var totalNeg = 0;
-                for (int i = 0; i<dataNeg.Count; i++)
+            for (int i = 0; i < dataNeg.Count; i++)
             {
-                var sum = 0;
-                for (int j = 0; j<dataNeg[i].Numbers.Count; j++)
+                sumNeg = 0;
+                for (int j = 0; j < dataNeg[i].Numbers.Count; j++)
                 {
-                    sum += dataNeg[i].Numbers[j];
+                    sumNeg += dataNeg[i].Numbers[j];
                 }
-                totalNeg += sum;
-            }
-            Console.WriteLine(totalNeg);
 
-            if (total > totalNeg)
-            {
-                Console.WriteLine($"Largest sum of numbers is first array with a total of {total}");
+                totalNeg = sumNeg;
             }
-            else
-            {
-                Console.WriteLine($"Largest sum of numbers is second array with a total of {totalNeg}");
-            }
+            Console.WriteLine(Math.Max(sumNeg, totalNeg));
         }
 
 private IList<NumberArray> Initialise()
