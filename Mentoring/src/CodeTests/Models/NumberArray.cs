@@ -10,4 +10,9 @@ namespace CodeTests.Models
     {
         public List<int> Numbers { get; set; }
     }
+
+    public class NumberArrayNeg
+    {
+        public List<int> Numbers { get; set; }
+    }
 }

@@ -8,95 +8,60 @@ using CodeTests.Models;
 
 namespace CodeTests.Tests.ForLoops
 {
-    public class ForLoop12 : ICodeTest
+    public class LargestArraySum
     {
-        public void Run()
+        public List<int> Run(IList<NumberArray> input)
         {
-            var data = Initialise();
-            var dataNeg = InitialiseWithNegativeNumbers();
+            var result = new List<int>();
 
             //TODO: Find the array with the largest sum of numbers
             //TODO: Initialise data with InitialiseWithNegativeNumbers and assert it works
 
             var sum = 0;
             var largest = 0;
-            for (int i = 0; i < data.Count; i++)
+            for (int i = 0; i < input.Count; i++)
             {
                 sum = 0;
-                for (int j = 0; j < data[i].Numbers.Count; j++)
+                for (int j = 0; j < input[i].Numbers.Count; j++)
                 {
-                    sum += data[i].Numbers[j];
+                    sum += input[i].Numbers[j];
                 }
 
                 if (sum > largest)
                 {
                     largest = sum;
+                    result.Add(largest);
                 }
+
             }
 
             Console.WriteLine(largest);
-            ;
+            return result;
+        }
 
-
+        public List<int> Run(IList<NumberArrayNeg> input)
+        {
+            var resultNeg = new List<int>();
 
             var sumNeg = 0;
             var largestNeg = 0;
-            for (int i = 0; i < dataNeg.Count; i++)
+            for (int i = 0; i < input.Count; i++)
             {
                 sumNeg = 0;
-                for (int j = 0; j < dataNeg[i].Numbers.Count; j++)
+                for (int j = 0; j < input[i].Numbers.Count; j++)
                 {
-                    sumNeg += dataNeg[i].Numbers[j];
+                    sumNeg += input[i].Numbers[j];
                 }
 
                 if (sumNeg > largestNeg || i == 0)
                 {
                     largestNeg = sumNeg;
+                    resultNeg.Add(largestNeg);
                 }
             }
 
             Console.WriteLine(largestNeg);
-            ;
-        }
-
-private IList<NumberArray> Initialise()
-        {
-            var result = new List<NumberArray>();
-
-            result.Add(new NumberArray //object 1
-            {
-                Numbers = new List<int> { 1, 2, 3, 4, 5 }
-            });
-            result.Add(new NumberArray // object 2
-            {
-                Numbers = new List<int> { 6, 7, 8, 9, 110 }
-            });
-            result.Add(new NumberArray //object 3
-            {
-                Numbers = new List<int> { 11, 12, 13, 14, 15 }
-            });
-
-            return result;
-        }
-
-        private IList<NumberArray> InitialiseWithNegativeNumbers()
-        {
-            var result = new List<NumberArray>();
-
-            result.Add(new NumberArray //object 1
-            {
-                Numbers = new List<int> { -1, -2, -3, -4, -5 }
-            });
-            result.Add(new NumberArray // object 2
-            {
-                Numbers = new List<int> { -6, -7, -8, -9, -10 }
-            });
-            result.Add(new NumberArray //object 3
-            {
-                Numbers = new List<int> { -11, -12, -13, -14, -15 }
-            });
-
-            return result;
+            return resultNeg;
         }
     }
 }
