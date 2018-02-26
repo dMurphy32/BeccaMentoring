@@ -19,7 +19,7 @@ namespace CodeTests.Tests.ForLoops
             //TODO: Initialise data with InitialiseWithNegativeNumbers and assert it works
 
             var sum = 0;
-            var total = 0;
+            var largest = 0;
             for (int i = 0; i < data.Count; i++)
             {
                 sum = 0;
@@ -27,13 +27,20 @@ namespace CodeTests.Tests.ForLoops
                 {
                     sum += data[i].Numbers[j];
                 }
-                total = sum;
+
+                if (sum > largest)
+                {
+                    largest = sum;
+                }
             }
-           Console.WriteLine(Math.Max(total,sum));
+
+            Console.WriteLine(largest);
+            ;
+
 
 
             var sumNeg = 0;
-            var totalNeg = 0;
+            var largestNeg = 0;
             for (int i = 0; i < dataNeg.Count; i++)
             {
                 sumNeg = 0;
@@ -42,9 +49,14 @@ namespace CodeTests.Tests.ForLoops
                     sumNeg += dataNeg[i].Numbers[j];
                 }
 
-                totalNeg = sumNeg;
+                if (sumNeg > largestNeg || i == 0)
+                {
+                    largestNeg = sumNeg;
+                }
             }
-            Console.WriteLine(Math.Max(sumNeg, totalNeg));
+
+            Console.WriteLine(largestNeg);
+            ;
         }
 
 private IList<NumberArray> Initialise()
@@ -57,7 +69,7 @@ private IList<NumberArray> Initialise()
             });
             result.Add(new NumberArray // object 2
             {
-                Numbers = new List<int> { 6, 7, 8, 9, 10 }
+                Numbers = new List<int> { 6, 7, 8, 9, 110 }
             });
             result.Add(new NumberArray //object 3
             {
