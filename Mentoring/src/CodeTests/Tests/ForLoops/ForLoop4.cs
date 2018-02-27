@@ -21,48 +21,7 @@ namespace CodeTests.Tests.ForLoops
             //use nested for loops
 
 
-            //all number from each object in data array
-            //for (int i = 0; i < input.Length; i++)
-            //{
-            //    for (int j = 0; j < input.Length; j++)
-            //    {
-            //        Console.Write("{0}, ", input[i]);
-            //        result.Add(input[i]);
-            //    }
-            //    Console.WriteLine();
-            //}
-
-            //return result;
-
-            ////even numbers from each object in data array
-            //for (int i = 0; i < input.Length; i++)
-            //{
-            //    for (int j = 0; j < input[i]; j++)
-            //    {
-            //        var numSet = input[i];
-            //        if (numSet % 2 == 0)
-            //        {
-            //            Console.Write("{0}, ", numSet);
-            //            result.Add(input[i]);
-            //        }
-            //    }
-            //    Console.WriteLine();
-            //}
-
-            //return result;
-
-            ////At the end of every data item, output the "Completed Item 'n'" where n is the index of the data item
-            for (int i = 0; i < input.Count; i++)
-            {
-                for (int j = 0; j < input[i].Numbers.Count; j++)
-                {
-                    Console.Write("{0}, ", input[i].Numbers[j]);
-                    result.Add(input[i].Numbers[j]);
-                }
-                Console.WriteLine("The Completed Item {0}", i);
-            }
-
-            return result;
+           
         }
     }
 }

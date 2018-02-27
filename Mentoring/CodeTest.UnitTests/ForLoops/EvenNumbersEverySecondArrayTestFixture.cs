@@ -36,37 +36,7 @@ namespace CodeTest.UnitTests.ForLoops
             return result;
         }
 
-        [Test]
-        public void Run_Invoke_EvenNumbersEverySecondArray()
-        {
-            //Arrange
-            var input = Initialise();
-            var expected = new List<int>
-            {
-                6,
-                8,
-                10,
-                724,
-                44,
-                16
-            };
-            var subject = new EvenNumbersEverySecondArray();
-
-            //Act
-            var result = subject.Run(input);
-
-            //Assert
-            for (int i = 1; i < input.Count; i=i+2)
-            {
-                for (int j = 0; j < input[i].Numbers.Count; j++)
-                {
-                    var numSet = input[i].Numbers[j];
-                    if (numSet%2 ==0)
-                    {
-                        Assert.AreEqual(expected, result);
-                    }
-                }
-            }
+       
         }
     }
 }

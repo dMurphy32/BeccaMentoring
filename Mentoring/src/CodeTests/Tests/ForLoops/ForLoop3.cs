@@ -11,14 +11,9 @@ namespace CodeTests.Tests.ForLoops
 
             // TODO: Create new array that is the reverse of the original
 
-            var result = new List<int>();
 
-            for (int i = input.Length; i > 0; i--)
-            {
-                Console.WriteLine(i);
-            }
 
-            return result ;
+
         }
     }
 }

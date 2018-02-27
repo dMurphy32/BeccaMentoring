@@ -13,35 +13,7 @@ namespace CodeTests.Tests.WhileLoops
             var expected = 564;
             var length = 1;
 
-            Console.Write("Input the 3 digit code: ");
-            var answer = Convert.ToInt32(Console.ReadLine());
-
-            while (expected != answer && length < 5)
-            {
-                Console.Write("Nope, try again: ");
-                answer = Convert.ToInt32(Console.ReadLine());
-                length++;
-            }
-            //adding this bit for fun
-            if (expected != answer)
-            {
-                Console.WriteLine("What a loser!");
-            }
-            else
-            {
-                Console.WriteLine("Correct, you're a star!");
-            }
-
-            // part 1 using ||
-            Console.Write("Input the 3 digit code: ");
-            var answer2 = Convert.ToInt32(Console.ReadLine());
-
-            while (!(expected != answer2) || length < 5)
-            {
-                Console.Write("Nope, try again: ");
-                answer2 = Convert.ToInt32(Console.ReadLine());
-                length++;
-            }
+           
         }
     }
 }

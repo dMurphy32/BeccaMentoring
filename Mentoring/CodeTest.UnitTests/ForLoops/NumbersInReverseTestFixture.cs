@@ -32,36 +32,7 @@ namespace CodeTest.UnitTests.ForLoops
             return result;
         }
 
-        [Test]
-        public void Run_Invoke_NumbersInReverseTest()
-        {
-            //Arrange
-            var input = Initialise();
-            var expected = new List<int>
-            {
-                3,
-                2,
-                1,
-                8,
-                7,
-                6,
-                13,
-                12,
-                11
-            };
-            var subject = new NumbersInReverse();
-
-            //Act
-            var result = subject.Run(input);
-
-            //Assert
-            for (int i = 0; i < input.Count; i++)
-            {
-                for (int j = input[i].Numbers.Count; j >=0; j--)
-                {
-                    Assert.AreEqual(expected[i], result[i]);
-                }
-            }
+        
         }
     }
 }

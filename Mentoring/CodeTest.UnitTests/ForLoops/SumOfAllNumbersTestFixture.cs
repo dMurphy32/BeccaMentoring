@@ -33,35 +33,7 @@ namespace CodeTest.UnitTests.ForLoops
             return result;
         }
 
-        [Test]
-        public void Run_Invoke_SumOfAllNumbersTestFixture()
-        {
-            //Arrange
-            var input = Initialise();
-            var expected = new List<int>
-            {
-                561
-            };
-            var subject = new SumOfAllNumbers();
-
-            //Act
-            var result = subject.Run(input);
-
-            //Assert
-            var sum = 0;
-            var total = sum + sum + sum;
-            for (int i = 0; i < input.Count; i++)
-            {
-                sum = 0;
-                for (int j = 0; j < input[i].Numbers.Count; j++)
-                {
-                    sum += input[i].Numbers[j];
-                }
-
-                total += sum;
-            }
-            Assert.AreEqual(expected, result);
-        }
+      
     }
 }
 

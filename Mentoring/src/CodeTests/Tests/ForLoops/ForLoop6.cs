@@ -18,17 +18,7 @@ namespace CodeTests.Tests.ForLoops
 
             var result = new List<int>();
 
-            for (int i = 0; i < input.Count; i++)
-            {
-                for (int j = input[i].Numbers.Count -1; j >= 0; j--)
-                {
-                    Console.Write("{0}, ", input[i].Numbers[j]);
-                    result.Add(input[i].Numbers[j]);
-                }
-                Console.WriteLine();
-            }
 
-            return result;
         }
     }
 }

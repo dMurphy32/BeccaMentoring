@@ -52,9 +52,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ForLoops\EvenNumberInArrayTestFixture.cs" />
+    <Compile Include="ForLoops\EvenNumbersEverySecondArrayTestFixture.cs" />
+    <Compile Include="ForLoops\EverySecondNumberTestFixture.cs" />
+    <Compile Include="ForLoops\IndexEqualsArrayValueTestFixture.cs" />
+    <Compile Include="ForLoops\IteratingReverseNumbersTestFixture.cs" />
     <Compile Include="ForLoops\MultiplyArrayBy2TestFixture.cs" />
+    <Compile Include="ForLoops\NumbersInReverseTestFixture.cs" />
+    <Compile Include="ForLoops\OddNumbersTestFixture.cs" />
     <Compile Include="ForLoops\ReverseArrayTestFixture.cs" />
     <Compile Include="ForLoops\SetAllToOddTestFixture.cs" />
+    <Compile Include="ForLoops\SumOfAllNumbersTestFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

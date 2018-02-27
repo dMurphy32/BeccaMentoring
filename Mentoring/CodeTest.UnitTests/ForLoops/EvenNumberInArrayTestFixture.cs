@@ -35,29 +35,7 @@ namespace CodeTest.UnitTests.ForLoops
             return result;
           }
 
-        [Test]
-        public void Run_Invoke_AllNumbersInListTest()
-        {
-            //Arrange
-            var input = Initialise();
-            var expected = new List<int>
-            {
-               120
-            };
-            
-            var subject = new EvenNumbersInArray();
-
-            //Act
-            var result = subject.Run(input);
-
-            //Assert
-            for (int i = 1; i < expected.Count; i++)
-            {
-                for (int j = 1; j < input[i].Numbers.Count; j++)
-                {
-                    Assert.AreEqual(expected[i], result);
-                }
-            }
+       
         }
     }
 }

@@ -16,17 +16,7 @@ namespace CodeTests.Tests.ForLoops
             // ie. print the array from obj 3 first in order, then from obj 2 in order
             // 11 12 13 14 15 6 7 8 9 10
 
-            for (int i = input.Count-1; i >= 0; i--)
-            {
-                for (int j = 0; j < input[i].Numbers.Count; j++)
-                {
-                    Console.WriteLine(input[i].Numbers[j]);
-                    result.Add(input[i].Numbers[j]);
-                }
-                Console.WriteLine();
-            }
 
-            return result;
         }
     }
 }

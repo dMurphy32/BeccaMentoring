@@ -32,37 +32,6 @@ namespace CodeTest.UnitTests.ForLoops
             return result;
         }
 
-        [Test]
-        public void Run_Invoke_OddNumbers()
-        {
-            //Arrange
-            var input = Initialise();
-            var expected = new List<int>
-            {
-                1,
-                3,
-                7,
-                11,
-                13
-            };
-            var subject = new OddNumbers();
-
-            //Act
-            var result = subject.Run(input);
-
-            //Assert
-            for (int i = 0; i < input.Count; i++)
-            {
-                for (int j = 0; j < input[i].Numbers.Count; j++)
-                {
-                    var numSet = input[i].Numbers[j];
-                    if (numSet % 2 == 1)
-                    {
-                        Assert.AreEqual(expected, result);
-
-                    }
-                }
-            }
-        }
+       
     }
 }
