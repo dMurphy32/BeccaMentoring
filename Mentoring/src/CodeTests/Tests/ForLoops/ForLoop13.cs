@@ -1,60 +1,66 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
 using CodeTests.Models;
 
 namespace CodeTests.Tests.ForLoops
 {
-    public class ForLoop13 : ICodeTest
-    {
-        public void Run()
+    public class SmallestArraySum
+    { 
+        
+        public List<int> Run(IList<NumberArray> input)
         {
-            var data = Initialise();
+            var result = new List<int>();
 
             //TODO: Find the array with the smallest sum of numbers
             //TODO: Initialise data with InitialiseWithNegativeNumbers and assert it works
-        }
 
-        private IList<NumberArray> Initialise()
-        {
-            var result = new List<NumberArray>();
+            var sum = 0;
+            var smallest = 0;
+            for (int i = 0; i < input.Count; i++)
+            {
+                sum = 0;
+                for (int j = 0; j < input[i].Numbers.Count; j++)
+                {
+                    sum += input[i].Numbers[j];
+                }
 
-            result.Add(new NumberArray //object 1
-            {
-                Numbers = new[] { 1, 2, 3, 4, 5 }
-            });
-            result.Add(new NumberArray // object 2
-            {
-                Numbers = new[] { 6, 7, 8, 9, 10 }
-            });
-            result.Add(new NumberArray //object 3
-            {
-                Numbers = new[] { 11, 12, 13, 14, 15 }
-            });
-
+                if (sum < smallest||i == 0)
+                {
+                    smallest = sum;
+                    result.Add(smallest);
+                }
+            }
+            Console.WriteLine(smallest);
             return result;
         }
 
-        private IList<NumberArray> InitialiseWithNegativeNumbers()
+        public List<int> Run(IList<NumberArrayNeg> input)
         {
-            var result = new List<NumberArray>();
+            var resultNeg = new List<int>();
 
-            result.Add(new NumberArray //object 1
+            var sumNeg = 0;
+            var smallestNeg = 0;
+            for (int i = 0; i < input.Count; i++)
             {
-                Numbers = new[] { -1, -2, -3, -4, -5 }
-            });
-            result.Add(new NumberArray // object 2
-            {
-                Numbers = new[] { -6, -7, -8, -9, -10 }
-            });
-            result.Add(new NumberArray //object 3
-            {
-                Numbers = new[] { -11, -12, -13, -14, -15 }
-            });
+                sumNeg = 0;
+                for (int j = 0; j < input[i].Numbers.Count; j++)
+                {
+                    sumNeg += input[i].Numbers[j];
+                }
 
-            return result;
+                if (sumNeg < smallestNeg || i == 0)
+                {
+                    smallestNeg = sumNeg;
+                    resultNeg.Add(smallestNeg);
+                }
+            }
+
+            Console.WriteLine(smallestNeg);
+            return resultNeg;
         }
     }
 }
