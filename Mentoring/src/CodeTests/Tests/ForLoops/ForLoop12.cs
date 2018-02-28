@@ -10,7 +10,7 @@ namespace CodeTests.Tests.ForLoops
 {
     public class LargestArraySum
     {
-        public List<int> Run(IList<NumberArray> input)
+        public int Run(IList<NumberArray> input)
         {
             var result = new List<int>();
 
@@ -36,10 +36,10 @@ namespace CodeTests.Tests.ForLoops
             }
 
             Console.WriteLine(largest);
-            return result;
+            return largest;
         }
 
-        public List<int> Run(IList<NumberArrayNeg> input)
+        public int Run(IList<NumberArrayNeg> input)
         {
             var resultNeg = new List<int>();
 
@@ -61,7 +61,7 @@ namespace CodeTests.Tests.ForLoops
             }
 
             Console.WriteLine(largestNeg);
-            return resultNeg;
+            return largestNeg;
         }
     }
 }

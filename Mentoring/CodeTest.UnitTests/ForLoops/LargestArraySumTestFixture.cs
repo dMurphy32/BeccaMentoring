@@ -58,10 +58,7 @@ namespace CodeTest.UnitTests.ForLoops
         {
             //Arrange
             var input = Initialise();
-            var expected = new List<int>
-            {
-                140
-            };
+            var expected = 140;
             var subject = new LargestArraySum();
 
             //Act
@@ -92,10 +89,7 @@ namespace CodeTest.UnitTests.ForLoops
         {
             //Arrange
             var input = InitialiseWithNegativeNumbers();
-            var expected = new List<int>
-            {
-                -15
-            };
+            var expected = -15;
             var subject = new LargestArraySum();
 
             //Act
