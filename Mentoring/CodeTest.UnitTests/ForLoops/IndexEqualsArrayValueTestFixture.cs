@@ -17,22 +17,19 @@ namespace CodeTest.UnitTests.ForLoops
         {
             //Arrange
             var input = new[] {7, 45, 5, 98, 4, 90};
-            var expected = new List<int>
-            {
-                4
-            };
+            var expected = 4;
             var subject = new IndexEqualsArrayValue();
 
             //Act
             var result = subject.Run(input);
 
             //Assert
-            for (int i = 0; i < expected.Count; i++)
+            for (int i = 0; i < expected; i++)
             {
                 var num = input[i];
                 if (i == num)
                 {
-                    Assert.AreEqual(expected[i], result[i]);
+                    Assert.AreEqual(expected, result);
                 }
             }
         }
