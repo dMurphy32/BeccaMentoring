@@ -6,7 +6,7 @@ namespace CodeTests.Tests.ForLoops
 {
     public class SumOfAllNumbers
     {
-        public List<int> Run(IList<NumberArray> input)
+        public int Run(IList<NumberArray> input)
         {
             var result = new List<int>();
             // TODO Sum up all the numbers across all the arrays
@@ -27,7 +27,7 @@ namespace CodeTests.Tests.ForLoops
             Console.WriteLine($"total is {total}");
             result.Add(total);
 
-            return result;
+            return total;
         }
     }
 }

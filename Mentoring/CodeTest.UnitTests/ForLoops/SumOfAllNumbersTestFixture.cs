@@ -38,10 +38,7 @@ namespace CodeTest.UnitTests.ForLoops
         {
             //Arrange
             var input = Initialise();
-            var expected = new List<int>
-            {
-                561
-            };
+            var expected = 561;
             var subject = new SumOfAllNumbers();
 
             //Act
