@@ -14,7 +14,7 @@ namespace CodeTests.Tests.ForLoops
             // TODO Print every second number in the array without an if statement, do the same in reverse 
 
             var result = new List<int>();
-
+            return null;
         }
     }
 }

@@ -18,7 +18,7 @@ namespace CodeTests.Tests.ForLoops
 
             var result = new List<int>();
 
-
+            return null;
         }
     }
 }

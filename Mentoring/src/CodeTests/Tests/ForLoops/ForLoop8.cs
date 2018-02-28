@@ -14,7 +14,7 @@ namespace CodeTests.Tests.ForLoops
             var result = new List<int>();
             // TODO Print the odd numbers from every array
 
-            
+            return null;
         }
     }
 }

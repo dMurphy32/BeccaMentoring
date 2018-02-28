@@ -11,13 +11,8 @@ namespace CodeTests.Tests.ForLoops
     {
         public void Run()
         {
-            var data = Initialise();
-
             //TODO: Find the array with the smallest sum of numbers
             //TODO: Initialise data with InitialiseWithNegativeNumbers and assert it works
-        }
-
-      
         }
     }
 }

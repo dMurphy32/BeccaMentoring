@@ -12,7 +12,7 @@ namespace CodeTests.Tests.ForLoops
         {
             //var array = new[] { 7, 45, 5, 98, 4, 90 };
             //TODO: Loop through array and exit it if the loop's index equals the arrays value at that  value (@ 4)
-
+            return null;
         }
     }
 }

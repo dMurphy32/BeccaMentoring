@@ -19,6 +19,6 @@ namespace CodeTests.Tests.WhileLoops
             //TODO: Implement while loop correctly but with the assertion '==' instead of '!='
 
 
-            
+        }
     }
 }

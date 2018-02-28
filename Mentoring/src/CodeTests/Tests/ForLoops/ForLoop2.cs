@@ -10,7 +10,7 @@ namespace CodeTests.Tests.ForLoops
             //var array = new[] { 1, 2, 3, 4, 5, 6};
 
             // TODO: Set all odd numbers to 0
-
+            return null;
         }
     }
 }

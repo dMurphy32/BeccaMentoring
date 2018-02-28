@@ -12,13 +12,10 @@ namespace CodeTests.Tests.ForLoops
     {
         public void Run()
         {
-            var data = Initialise();
-            var dataNeg = InitialiseWithNegativeNumbers();
-
             //TODO: Find the array with the largest sum of numbers
             //TODO: Initialise data with InitialiseWithNegativeNumbers and assert it works
 
-           
+            //return null;
         }
     }
 }

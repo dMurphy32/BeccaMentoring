@@ -11,7 +11,7 @@ namespace CodeTests.Tests.ForLoops
             var result = new List<int>();
             // TODO Sum up all the numbers across all the arrays
 
-
+            return null;
         }
     }
 }

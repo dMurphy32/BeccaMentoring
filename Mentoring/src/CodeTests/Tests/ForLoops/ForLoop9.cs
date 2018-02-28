@@ -11,7 +11,7 @@ namespace CodeTests.Tests.ForLoops
             var result = new List<int>();
             // TODO Print the even numbers from every second array
 
-           
+            return null;
         }
     }
 }
