@@ -11,7 +11,7 @@ namespace CodeTests.Tests.ForLoops
     public class SmallestArraySum
     { 
         
-        public List<int> Run(IList<NumberArray> input)
+        public int Run(IList<NumberArray> input)
         {
             var result = new List<int>();
 
@@ -35,10 +35,10 @@ namespace CodeTests.Tests.ForLoops
                 }
             }
             Console.WriteLine(smallest);
-            return result;
+            return smallest;
         }
 
-        public List<int> Run(IList<NumberArrayNeg> input)
+        public int Run(IList<NumberArrayNeg> input)
         {
             var resultNeg = new List<int>();
 
@@ -58,9 +58,8 @@ namespace CodeTests.Tests.ForLoops
                     resultNeg.Add(smallestNeg);
                 }
             }
-
             Console.WriteLine(smallestNeg);
-            return resultNeg;
+            return smallestNeg;
         }
     }
 }

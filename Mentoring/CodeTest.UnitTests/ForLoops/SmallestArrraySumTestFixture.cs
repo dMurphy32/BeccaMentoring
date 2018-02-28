@@ -18,7 +18,7 @@ namespace CodeTest.UnitTests.ForLoops
 
             result.Add(new NumberArray
             {
-                Numbers = new List<int> { 1, 2, 3, 4, 500 }
+                Numbers = new List<int> { 1, 2, 3, 4, 5 }
             });
             result.Add(new NumberArray
             {
@@ -58,10 +58,7 @@ namespace CodeTest.UnitTests.ForLoops
         {
             //Arrange
             var input = Initialise();
-            var expected = new List<int>
-            {
-                15
-            };
+            var expected = 15;
             var subject = new SmallestArraySum();
 
             //Act
@@ -81,7 +78,7 @@ namespace CodeTest.UnitTests.ForLoops
                 if (sum < smallest)
                 {
                     smallest = sum;
-                    Assert.AreEqual(expected[i], result[i]);
+                    Assert.AreEqual(expected, result);
                 }
             }
         }
@@ -92,10 +89,7 @@ namespace CodeTest.UnitTests.ForLoops
         {
             //Arrange
             var input = InitialiseWithNegativeNumbers();
-            var expected = new List<int>
-            {
-                -65
-            };
+            var expected = -65;
             var subject = new SmallestArraySum();
 
             //Act
@@ -115,7 +109,7 @@ namespace CodeTest.UnitTests.ForLoops
                 if (sum < smallest || i == 0)
                 {
                     smallest = sum;
-                    Assert.AreEqual(expected[i], result[i]);
+                    Assert.AreEqual(expected, result);
                 }
 
             }
