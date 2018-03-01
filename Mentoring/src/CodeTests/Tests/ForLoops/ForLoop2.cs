@@ -7,10 +7,22 @@ namespace CodeTests.Tests.ForLoops
     {
         public List<int> Run(int[] input)
         {
-            //var array = new[] { 1, 2, 3, 4, 5, 6};
-
             // TODO: Set all odd numbers to 0
-            return null;
+            var result = new List<int>();
+            for (int i = 0; i < input.Length; i++)
+            {
+                var num = input[i];
+                if (num%2 == 1)
+                {
+                    result.Add(0);
+                }
+                else
+                {
+                    result.Add(num);
+                }
+            }
+
+            return result;
         }
     }
 }
