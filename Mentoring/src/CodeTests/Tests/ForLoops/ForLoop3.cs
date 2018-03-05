@@ -7,11 +7,16 @@ namespace CodeTests.Tests.ForLoops
     {
         public  List<int> Run(int[] input)
         {
-            //var array = new[] { 1, 2, 3, 4, 5, 6 };
 
             // TODO: Create new array that is the reverse of the original
 
-            return null;
+            var result = new List<int>();
+            for (int i = 0; i > input.Length; i--)
+            {
+                result.Add(i);
+            }
+
+            return result;
 
 
         }
