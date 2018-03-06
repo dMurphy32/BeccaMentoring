@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CodeTests.Models;
 
 namespace CodeTests.Tests.ForLoops
 {
@@ -10,11 +11,18 @@ namespace CodeTests.Tests.ForLoops
     {
         public List<int> Run(int[] input)
         {
-            //var array = new[] { 1, 2, 3, 4, 5, 6 };
             // TODO Print every second number in the array without an if statement, do the same in reverse 
 
             var result = new List<int>();
-            return null;
+            for (int i = 0; i < input.Length; i++)
+            {
+                if (i % 2 == 1)
+                {
+                    result.Add(input[i]);
+                    Console.WriteLine(input[i]);
+                }
+            }
+            return result;
         }
     }
 }
