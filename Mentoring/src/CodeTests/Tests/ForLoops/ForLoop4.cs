@@ -20,8 +20,18 @@ namespace CodeTests.Tests.ForLoops
             // TODO 3: At the end of every data item, output the "Completed Item 'n'" where n is the index of the data item
             //use nested for loops
 
-
-            return null;
+            for (int i = 0; i < input.Count; i++)
+            {
+                for (int j = 0; j < input[i].Numbers.Count; j++)
+                {
+                    //var num = input[i];
+                    if (input[i].Numbers[j] % 2 == 0)
+                    {
+                        result.Add(input[i].Numbers[j]);
+                    }
+                }
+            }
+            return result;
         }
     }
 }
