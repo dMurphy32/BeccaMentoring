@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,8 +18,15 @@ namespace CodeTests.Tests.ForLoops
             // 5 4 3 2 1 10 9 8 7 6
 
             var result = new List<int>();
-
-            return null;
+            for (int i = 0; i < input.Count; i++)
+            {
+                for (int j = input[i].Numbers.Count -1; j >= 0 ; j--)
+                {
+                    result.Add(input[i].Numbers[j]);
+                    Console.WriteLine(input[i].Numbers[j]);
+                }
+            }
+            return result;
         }
     }
 }
