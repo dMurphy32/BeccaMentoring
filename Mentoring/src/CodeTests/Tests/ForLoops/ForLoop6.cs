@@ -23,7 +23,6 @@ namespace CodeTests.Tests.ForLoops
                 for (int j = input[i].Numbers.Count -1; j >= 0 ; j--)
                 {
                     result.Add(input[i].Numbers[j]);
-                    Console.WriteLine(input[i].Numbers[j]);
                 }
             }
             return result;
