@@ -58,7 +58,7 @@ namespace CodeTest.UnitTests.ForLoops
             {
                 for (int j = 0; j < input[i].Numbers.Count; j++)
                 {
-                    Assert.AreEqual(expected[i], result[j]);
+                    Assert.AreEqual(expected, result);
                 }
             }
         }

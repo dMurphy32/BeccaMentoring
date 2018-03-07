@@ -14,7 +14,17 @@ namespace CodeTests.Tests.ForLoops
             var result = new List<int>();
             // TODO Print the odd numbers from every array
 
-            return null;
+            for (int i = 0; i < input.Count; i++)
+            {
+                for (int j = 0; j < input[i].Numbers.Count; j++)
+                {
+                    if (input[i].Numbers[j] % 2 == 1)
+                    {
+                        result.Add(input[i].Numbers[j]);
+                    }
+                }
+            }
+            return result;
         }
     }
 }
