@@ -10,8 +10,21 @@ namespace CodeTests.Tests.ForLoops
         {
             var result = new List<int>();
             // TODO Print the even numbers from every second array
-
-            return null;
+            for (int i = 1; i < input.Count; i=i+2)
+            {
+                if (input[i].Numbers.Count % 2 == 0)
+                {
+                    for (int j = 0; j < input.Count; j++)
+                    {
+                        var num = input[i].Numbers[j];
+                        if (num % 2 == 0)
+                        {
+                            result.Add(num);
+                        }
+                    }
+                }
+            }
+            return result;
         }
     }
 }
